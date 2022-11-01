@@ -63,25 +63,32 @@
   padding-bottom: 66px;
   width: 420px;
   text-align: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  box-shadow: 3px 7px 14px #000;
   border-radius: 22px;
+  display: flex;
+  flex-direction: column;
 }
 
 .login-button {
   cursor: pointer;
   color: white;
-  padding: 12px;
+  padding: 10px;
+  margin: 0 auto;
   border-radius: 8px;
   display: inline-block;
 }
 
 .facebook {
   background-color: #3b5998;
+  margin-top: 18px;
 }
 
 .google {
   background-color: #4285f4;
   color: white;
+  text-align: center;
 }
 
 #loading-container {

@@ -18,7 +18,8 @@ const Login = () => {
             }
           />{" "}
           Sign In with Google
-          <br /> <br />
+          <br />
+          <br />
         </div>
         <div className="login-button facebook">
           <FacebookOutlined
