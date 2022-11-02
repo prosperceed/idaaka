@@ -83,12 +83,14 @@
 .facebook {
   background-color: #3b5998;
   margin-top: 18px;
+  display: inline-block;
 }
 
 .google {
   background-color: #4285f4;
   color: white;
   text-align: center;
+  display: inline-block;
 }
 
 #loading-container {

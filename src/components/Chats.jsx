@@ -25,7 +25,7 @@ const Chats = () => {
     axios
       .get("https://api.chatengine.io/users/me", {
         headers: {
-          "project-id": "75cd77a0-02af-48d4-804c-9d53030fb2a0",
+          "project-id": process.env.REACT_APP_CHAT_ENGINE_ID,
           "user-name": user.email,
           "user-secret": user.uid,
         },
@@ -51,7 +51,7 @@ const Chats = () => {
             .catch((error) => console.log(error));
         });
       });
-  }, []);
+  }, [user, history]);
 
   if (!user || loading) return "Loading...";
 
