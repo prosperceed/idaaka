@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChatEngine } from "react-chat-engine";
 import { useHistory } from "react-router-dom";
+import "../index.css";
 
 import { auth } from "../firebase";
 import { useAuth } from "../contexts/AuthContext";
@@ -68,7 +69,7 @@ const Chats = () => {
         </div>
       </div>
       <ChatEngine
-        height="calc(100vh - 200px)"
+        height="calc(100vh - 100px)"
         projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
         userName={user.email}
         userSecret={user.uid}

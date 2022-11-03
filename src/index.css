@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Global */
 
 * {
@@ -6,7 +10,14 @@
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+body {
+  background: black;
+}
+
 /* Chats Page */
+
+#ce-feed-container {
+}
 
 .chats-page {
   position: absolute;
@@ -107,4 +118,21 @@
   position: relative;
   left: calc(50vw - 33px);
   top: calc(50vh - 22px);
+}
+
+#ce-send-message-button {
+  padding: 20px !important;
+  background: green !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#msg-textarea {
+  border: 1px solid #111 !important;
+  border-radius: 12px;
+  height: 30px !important;
+}
+
+.ce-chat-feed-container {
+  background: rgba(to top #050509 to bottom #170e5f) !important;
 }
