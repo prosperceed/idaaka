@@ -11,7 +11,7 @@ const Login = () => {
   return (
     <div id="login-page">
       <div id="login-card">
-        <h2 className="text-white">Welcome to Idaaka!</h2>
+        <h2 className="text-white text-4xl">Welcome to Ida'oka App!</h2>
         <Link
           className="login-button google"
           onClick={() =>

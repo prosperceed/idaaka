@@ -63,13 +63,13 @@ const Chats = () => {
   return (
     <div className="chat-page">
       <div className="nav-bar">
-        <div className="logo-tab">Idaaka</div>
+        <div className="logo-tab">Ida'oka</div>
         <div onClick={handleLogout} className="logout-tab">
           Logout
         </div>
       </div>
       <ChatEngine
-        height="calc(100vh - 100px)"
+        height="calc(100vh - 150px)"
         projectID={process.env.REACT_APP_CHAT_ENGINE_ID}
         userName={user.email}
         userSecret={user.uid}
